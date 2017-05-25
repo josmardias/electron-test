@@ -17,8 +17,9 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
-    protocol: 'file:',
+    hostname: 'localhost',
+    port: 3000,
+    protocol: 'http:',
     slashes: true
   }))
 
